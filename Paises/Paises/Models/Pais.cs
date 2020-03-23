@@ -1,5 +1,7 @@
 ﻿using GalaSoft.MvvmLight.Command;
 using Newtonsoft.Json;
+using Paises.ViewModels;
+using Paises.Views;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -83,7 +85,20 @@ namespace Paises.Models
         [JsonProperty(PropertyName = "cioc")]
         public string Cioc { get; set; }
 
-        
+        public ICommand SelectLandCommand
+        {
+
+            get
+            {
+                return new RelayCommand(SelectLand);
+            }
+        }
+
+        private async void SelectLand()
+        {
+            MainViewModel.GetInstance().Pais = new ViewModels.PaisViewModel(this);
+            await Application.Current.MainPage.Navigation.PushAsync(new PaisPage());
+        }
 
 
     }

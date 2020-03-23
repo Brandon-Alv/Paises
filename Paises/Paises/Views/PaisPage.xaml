@@ -25,11 +25,11 @@
                     FontSize="Large"
                     FontAttributes="Bold"
                     HorizontalOptions="Center"
-                    Text="{Binding Land.Name}"
+                    Text="{Binding PaisSelect.Name}"
                     TextColor="Black">
                 </Label>
                 <ffimageloading:CachedImage 
-                    Source="{Binding Land.Flag, Converter={StaticResource SvgImageSourceConverter}}">
+                    Source="{Binding PaisSelect.Flag, Converter={StaticResource SvgImageSourceConverter}}">
                 </ffimageloading:CachedImage>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -46,7 +46,7 @@
                         Grid.Column="1"
                         Grid.Row="0"
                         FontAttributes="Bold"
-                        Text="{Binding Land.Capital}"
+                        Text="{Binding PaisSelect.Capital}"
                         TextColor="Black">
                     </Label>
                     <Label
@@ -59,7 +59,7 @@
                         Grid.Column="1"
                         Grid.Row="1"
                         FontAttributes="Bold"
-                        Text="{Binding Land.Population, StringFormat='{0:N0}'}"
+                        Text="{Binding PaisSelect.Population, StringFormat='{0:N0}'}"
                         TextColor="Black">
                     </Label>
                     <Label
@@ -72,7 +72,7 @@
                         Grid.Column="1"
                         Grid.Row="2"
                         FontAttributes="Bold"
-                        Text="{Binding Land.Area, StringFormat='{0:N0}'}"
+                        Text="{Binding PaisSelect.Area, StringFormat='{0:N0}'}"
                         TextColor="Black">
                     </Label>
                     <Label
@@ -85,7 +85,7 @@
                         Grid.Column="1"
                         Grid.Row="3"
                         FontAttributes="Bold"
-                        Text="{Binding Land.Alpha2Code}"
+                        Text="{Binding PaisSelect.Alpha2Code}"
                         TextColor="Black">
                     </Label>
                     <Label
@@ -98,7 +98,7 @@
                         Grid.Column="1"
                         Grid.Row="4"
                         FontAttributes="Bold"
-                        Text="{Binding Land.Alpha3Code}"
+                        Text="{Binding PaisSelect.Alpha3Code}"
                         TextColor="Black">
                     </Label>
                     <Label
@@ -111,7 +111,7 @@
                         Grid.Column="1"
                         Grid.Row="5"
                         FontAttributes="Bold"
-                        Text="{Binding Land.Region}"
+                        Text="{Binding PaisSelect.Region}"
                         TextColor="Black">
                     </Label>
                     <Label
@@ -124,7 +124,7 @@
                         Grid.Column="1"
                         Grid.Row="6"
                         FontAttributes="Bold"
-                        Text="{Binding Land.Subregion}"
+                        Text="{Binding PaisSelect.Subregion}"
                         TextColor="Black">
                     </Label>
                     <Label
@@ -137,7 +137,7 @@
                         Grid.Column="1"
                         Grid.Row="7"
                         FontAttributes="Bold"
-                        Text="{Binding Land.Demonym}"
+                        Text="{Binding PaisSelect.Demonym}"
                         TextColor="Black">
                     </Label>
                     <Label
@@ -150,7 +150,7 @@
                         Grid.Column="1"
                         Grid.Row="8"
                         FontAttributes="Bold"
-                        Text="{Binding Land.Gini, StringFormat='{0:N2}'}"
+                        Text="{Binding PaisSelect.Gini, StringFormat='{0:N2}'}"
                         TextColor="Black">
                     </Label>
                     <Label
@@ -163,7 +163,7 @@
                         Grid.Column="1"
                         Grid.Row="9"
                         FontAttributes="Bold"
-                        Text="{Binding Land.NativeName}"
+                        Text="{Binding PaisSelect.NativeName}"
                         TextColor="Black">
                     </Label>
                     <Label
@@ -176,7 +176,7 @@
                         Grid.Column="1"
                         Grid.Row="10"
                         FontAttributes="Bold"
-                        Text="{Binding Land.NumericCode}"
+                        Text="{Binding PaisSelect.NumericCode}"
                         TextColor="Black">
                     </Label>
                     <Label
@@ -189,7 +189,7 @@
                         Grid.Column="1"
                         Grid.Row="11"
                         FontAttributes="Bold"
-                        Text="{Binding Land.Cioc}"
+                        Text="{Binding PaisSelect.Cioc}"
                         TextColor="Black">
                     </Label>
                 </Grid>
