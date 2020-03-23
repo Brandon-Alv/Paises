@@ -51,7 +51,12 @@ namespace Paises.ViewModels
             this.Currencies = new ObservableCollection<Currency>(this.Land.Currencies);
             this.Languages = new ObservableCollection<Language>(this.Land.Languages);
             this.LoadBorders();
-
+            this.Borders.Add(new Border
+            {
+                Code = "Info",
+                Name = "Este Pais no tiene fronteras"
+            }
+            );
 
 
 
