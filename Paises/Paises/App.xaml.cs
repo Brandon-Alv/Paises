@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Paises.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,8 @@ namespace Paises
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            
+            MainPage = new NavigationPage(new PaisesPage());
         }
 
         protected override void OnStart()
