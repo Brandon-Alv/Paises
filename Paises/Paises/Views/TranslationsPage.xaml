@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    
+    x:Class="Paises.Views.TranslationsPage"
+    BindingContext="{Binding Main, Source={StaticResource Locator}}"
+    Icon="ic_action_translate">
+
+    <ContentPage.Content>
+        <StackLayout
+            BindingContext="{Binding Pais}"
+            Padding="5">
+            <Label
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="{Binding Land.Name}"
+                TextColor="Black">
+            </Label>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Text="Aleman"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    FontAttributes="Bold"
+                    Text="{Binding Land.Translations.Germany}"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Text="Español"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    FontAttributes="Bold"
+                    Text="{Binding Land.Translations.Spanish}"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    Text="Frances"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    FontAttributes="Bold"
+                    Text="{Binding Land.Translations.French}"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="3"
+                    Text="Japones"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="3"
+                    FontAttributes="Bold"
+                    Text="{Binding Land.Translations.Japanese}"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="4"
+                    Text="Italiano"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="4"
+                    FontAttributes="Bold"
+                    Text="{Binding Land.Translations.Italian}"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="5"
+                    Text="Brasileño"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="5"
+                    FontAttributes="Bold"
+                    Text="{Binding Land.Translations.Brazilian}"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="6"
+                    Text="Portugues"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="6"
+                    FontAttributes="Bold"
+                    Text="{Binding Land.Translations.Portuges}"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="7"
+                    Text="Holandes"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="7"
+                    FontAttributes="Bold"
+                    Text="{Binding Land.Translations.Dutch}"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="8"
+                    Text="Croata"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="8"
+                    FontAttributes="Bold"
+                    Text="{Binding Land.Translations.Croatian}"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="9"
+                    Text="Persa"
+                    TextColor="Black">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="9"
+                    FontAttributes="Bold"
+                    Text="{Binding Land.Translations.Persian}"
+                    TextColor="Black">
+                </Label>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

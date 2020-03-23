@@ -19,6 +19,7 @@ namespace Paises.ViewModels
         #region Constructor
         public MainViewModel()
         {
+            instance = this;
             this.Paises = new PaisesViewModel();
         }
         #endregion

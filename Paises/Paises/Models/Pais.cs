@@ -97,7 +97,7 @@ namespace Paises.Models
         private async void SelectLand()
         {
             MainViewModel.GetInstance().Pais = new ViewModels.PaisViewModel(this);
-            await Application.Current.MainPage.Navigation.PushAsync(new PaisPage());
+            await Application.Current.MainPage.Navigation.PushAsync(new PaisTabbedPage());
         }
 
 
