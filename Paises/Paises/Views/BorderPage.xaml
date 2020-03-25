@@ -7,14 +7,13 @@
     xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
     x:Class="Paises.Views.BorderPage"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
-    Icon="ic_action_language"
-    BackgroundImageSource="icon">
+    Icon="ic_action_language">
 
     <ContentPage.Content>
+
         <StackLayout
             BindingContext="{Binding Pais}"
             Padding="5">
-
 
             <Label
                 FontSize="Large"
