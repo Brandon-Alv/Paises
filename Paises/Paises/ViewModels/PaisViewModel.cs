@@ -57,7 +57,7 @@ namespace Paises.ViewModels
                 this.Borders.Add(new Border
                 {
                     Code = "Info",
-                    Name = "Este Pais no tiene fronteras"
+                    Name = "Este pais no tiene fronteras"
                 }
             );
             }

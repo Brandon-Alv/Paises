@@ -18,6 +18,15 @@
                 Text="{Binding Land.Name}"
                 TextColor="Black">
             </Label>
+
+            <Label
+                Margin="0,15,0,15"
+                FontSize="Large"
+                
+                HorizontalOptions="Center"
+                Text="Monedas"
+                TextColor="Black">
+            </Label>
             <ListView
                 HasUnevenRows="true"
                 ItemsSource="{Binding Currencies}">

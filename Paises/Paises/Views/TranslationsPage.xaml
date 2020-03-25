@@ -18,6 +18,16 @@
                 Text="{Binding Land.Name}"
                 TextColor="Black">
             </Label>
+
+            <Label
+                Margin="0,15,0,15"
+                FontSize="Large"
+                
+                HorizontalOptions="Center"
+                Text="Traducciones"
+                TextColor="Black">
+            </Label>
+            
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>

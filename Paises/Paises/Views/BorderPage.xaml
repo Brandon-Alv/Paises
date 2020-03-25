@@ -2,15 +2,27 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
     x:Class="Paises.Views.BorderPage"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
     Icon="ic_action_language">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ffimageloadingsvg:SvgImageSourceConverter 
+                x:Key="SvgImageSourceConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
 
     <ContentPage.Content>
         <StackLayout
             BindingContext="{Binding Pais}"
             Padding="5">
+
             <Label
                 FontSize="Large"
                 FontAttributes="Bold"
@@ -18,6 +30,16 @@
                 Text="{Binding Land.Name}"
                 TextColor="Black">
             </Label>
+
+            <Label
+                Margin="0,15,0,15"
+                FontSize="Large"
+                
+                HorizontalOptions="Center"
+                Text="Fronteras"
+                TextColor="Black">
+            </Label>
+
             <ListView
                 HasUnevenRows="true"
                 ItemsSource="{Binding Borders}">
