@@ -9,19 +9,11 @@
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
     Icon="ic_action_language">
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <ffimageloadingsvg:SvgImageSourceConverter 
-                x:Key="SvgImageSourceConverter"/>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
-
-
     <ContentPage.Content>
         <StackLayout
             BindingContext="{Binding Pais}"
             Padding="5">
+
 
             <Label
                 FontSize="Large"
